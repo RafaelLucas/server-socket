@@ -6,7 +6,7 @@ import cors from "cors";
 
 
 const bodyParser = require('body-parser')
-const server = new Server();
+const server = Server.instance;
 
 //Config bodyParser
 server.app.use(bodyParser.urlencoded({ extended: true }));
