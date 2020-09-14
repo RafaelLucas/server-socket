@@ -8,11 +8,11 @@ import cors from "cors";
 const bodyParser = require('body-parser')
 const server = new Server();
 
-//bodyParser
+//Config bodyParser
 server.app.use(bodyParser.urlencoded({ extended: true }));
 server.app.use(bodyParser.json());
 
-//CORS
+//Config CORS
 server.app.use(cors({ origin: true, credentials: true }))
 
 //Rutas de servicios
